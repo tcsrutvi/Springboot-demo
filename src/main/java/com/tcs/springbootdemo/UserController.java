@@ -17,11 +17,13 @@ public class UserController {
 	private Iterable<User> getUser() {
 		return userService.getAllUsers();
 	}
+	
 	@PostMapping("/user")
 	private void saveUser(@RequestBody User user) {
 		userService.save(user);
 		System.out.println(user.getFirstName());
 	}
+	
 	@PutMapping("/user") //METHOD+Path
 	private void updateUser(@RequestBody User user) {
 		userService.save(user);
