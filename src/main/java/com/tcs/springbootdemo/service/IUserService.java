@@ -1,6 +1,7 @@
-package com.tcs.springbootdemo;
+package com.tcs.springbootdemo.service;
 
 import java.util.Optional;
+import com.tcs.springbootdemo.entity.User;
 
 public interface IUserService {
 
